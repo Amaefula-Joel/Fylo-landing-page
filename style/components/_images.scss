@@ -1,0 +1,16 @@
+.logo{
+    img{
+        height: 35px;
+    }
+}
+
+.illustration{
+    max-width: 500px;
+    margin-left: auto;
+
+    @media (max-width: $mediaQuery-mobile-vp) {
+        &{
+            margin: 0 auto;
+        }
+    }
+}

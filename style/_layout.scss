@@ -1,0 +1,24 @@
+.main-wrapper{
+    padding-top: $spacing-lg;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 $base-spacing;
+}
+
+section{
+    padding: $base-spacing * 7 0;
+}
+
+.section-flex{
+    @include grid(2, stretch, center);
+}
+
+
+@media (max-width: $mediaQuery-mobile-vp) {
+    .one-column-mobile{
+        @include grid(1);
+    }
+}

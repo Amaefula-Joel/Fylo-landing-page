@@ -1,0 +1,13 @@
+form{
+    input{
+        border: $base-thickness solid $primary-100;
+        padding: calc($base-spacing / 1.2);
+        border-radius: $base-border-radius;
+        min-width: 300px;
+        font-size: $text-small;
+
+        &.block{
+            display: block;
+        }
+    }
+}
