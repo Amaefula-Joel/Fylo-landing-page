@@ -3,6 +3,17 @@ $colors-map: (
     'primary-200': $primary-200,
     'accent-100' : $accent-100,
     'accent-200' : $accent-200,
-    'neutral-100' : $nuetral-100,
-    'neutral-200' : $neutral-100
+    'neutral-100' : $neutral-100,
+    'neutral-200' : $neutral-200,
+    'light-gray' : hsl(240deg, 75%, 98.43%)
 );
+
+@each $key, $val in $colors-map{
+    .text-#{$key} {
+        color: $val;
+    }
+
+    .bg-#{$key} {
+        background-color: $val;
+    }
+}

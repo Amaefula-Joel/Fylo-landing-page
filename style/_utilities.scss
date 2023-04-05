@@ -1,0 +1,79 @@
+$spacing-map: (
+    'sm' : $spacing-sm,
+    'base' : $base-spacing,
+    'md' : $spacing-md,
+    'lg' : $spacing-lg,
+    'xl' : $spacing-xl
+);
+
+@each $key, $val in $spacing-map {
+    // padding utilities
+    .padding-top-#{$key}{
+        padding-top: $val;
+    }
+
+    .padding-bottom-#{$key}{
+        padding-bottom: $val;
+    }
+
+    .padding-left-#{$key}{
+        padding-left: $val;
+    }
+
+    .padding-right-#{$key}{
+        padding-right: $val;
+    }
+
+    .padding-x-#{$key}{
+        padding-left: $val;
+        padding-right: $val;
+    }
+
+    .padding-y-#{$key}{
+        padding-top: $val;
+        padding-bottom: $val;
+    }
+
+    // margins utilities
+    .margin-top-#{$key}{
+        margin-top: $val;
+    }
+
+    .margin-bottom-#{$key}{
+        margin-bottom: $val;
+    }
+
+    .margin-left-#{$key}{
+        margin-left: $val;
+    }
+
+    .margin-right-#{$key}{
+        margin-right: $val;
+    }
+
+    .margin-x-#{$key}{
+        margin-left: $val;
+        margin-right: $val;
+    }
+
+    .margin-y-#{$key}{
+        margin-top: $val;
+        margin-bottom: $val;
+    }
+}
+
+.p-relative{
+    position: relative;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+
+
+@media (max-width: $mediaQuery-mobile-vp) {
+    .text-center-mob{
+        text-align: center;
+    }
+}

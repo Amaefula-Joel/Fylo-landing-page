@@ -6,6 +6,7 @@
 
 .illustration{
     max-width: 500px;
+    width: 100%;
     margin-left: auto;
 
     @media (max-width: $mediaQuery-mobile-vp) {
@@ -13,4 +14,16 @@
             margin: 0 auto;
         }
     }
+}
+
+// .curve{ 
+//     img{
+//         width: 100%;
+//     }
+// }
+
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }

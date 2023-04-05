@@ -1,8 +1,41 @@
-h2{
-    font-size: $heading-1;
+h1, h2{
     margin-bottom: $spacing-md;
+    font-size: $heading-1
 }
 
 p{
     margin-bottom: $base-spacing;
+}
+
+.call-to-action{
+    @include flex();
+    a{
+        color: $accent-100;
+        font-weight: 700;
+        padding-bottom: $spacing-sm;
+        border-bottom: $base-thickness solid $accent-100;
+
+        .arrow{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+
+@media (max-width: $mediaQuery-mobile-vp) {
+    h1, h2{
+        text-align: center;
+    }
+
+    h1{
+        font-size: $heading-md;
+    }
+
+    h2{
+        font-size: $heading-sm;
+    }
+
+    .call-to-action{
+        @include flex(center);
+    }
 }

@@ -24,12 +24,10 @@
   <div class="main-wrapper">
     <div class="container">
       <nav>
-        <h1>
-          <a href="#" class="logo">
-            <span class="visually-hidden">fylo</span> 
-            <img src="images/logo.svg" alt="fylo">
-          </a>
-        </h1>
+        <a href="#" class="logo">
+          <span class="visually-hidden">fylo</span> 
+          <img src="images/logo.svg" alt="fylo">
+        </a>
   
         <ul>
           <li><a href="#">Features</a></li>
@@ -43,8 +41,8 @@
       <div class="container">
         <div class="section-flex one-column-mobile">
           <div class="hero-section">
-            <h2>All your files in one secure location, accessible anywhere.</h2>
-            <p>Fylo stores your most important files in one secure location. <br>
+            <h1>All your files in one secure location, accessible anywhere.</h1>
+            <p class="text-center-mob">Fylo stores your most important files in one secure location. <br>
               Access them wherever you need, share and collaborate with friends, 
               family, and co-workers.</p>
 
@@ -60,8 +58,16 @@
       </div>
     </section>
 
-    <section>
+    <!-- <div class="curve">
+      <img class="" src="images/bg-curve-desktop.svg" alt="background curve image desktop">
+    </div> -->
+    <section class="bg-light-gray p-relative">
       <div class="container">
+        <div class="curve">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+          </svg>
+      </div>
         <div class="section-flex one-column-mobile">
           <div>
             <h2>Stay productive, wherever you are</h2>
@@ -70,9 +76,48 @@
 
               <p>Securely share files and folders with friends, family and colleagues for 
                 live collaboration. No email attachments required!</p>
+
+                <div class="call-to-action margin-bottom-lg">
+                  <a href="#">See how Fylo works 
+                    <img class="arrow" src="images/icon-arrow.svg" alt="arrow">
+                  </a>
+                </div>
+                
+                <div class="card">
+                  <img src="images/icon-quotes.svg" alt="quotes icon" class="margin-bottom-base">
+                  <p class="comment">Fylo has improved our team productivity by an order of magnitude. Since 
+                    making the switch our team has become a well-oiled collaboration machine.</p>
+
+                    <div class="details">
+                      <img class="avatar" src="images/avatar-testimonial.jpg" alt="avatar">
+
+                      <div>
+                        <p>Kyle Burton</p>
+                      </div>
+                    </div>
+                </div>
           </div>
           <div>
             <img class="illustration" src="images/illustration-2.svg" alt="illustration-2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary-100 ">
+      <div class="container">
+        <div class="section-flex one-column-mobile">
+          <div>
+            <h2 class="text-neutral-100">Get early access today</h2>
+            <p class="text-neutral-100">It only takes a minute to sign up and our free starter tier is extremely generous. 
+              If you have any questions, our support team would be happy to help you.</p>
+          </div>
+
+          <div>
+            <form>
+              <input type="email" placeholder="email@example.com">
+              <button type="submit" class="btn">Get Started For Free</button>
+            </form>
           </div>
         </div>
       </div>
@@ -84,6 +129,8 @@
         Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer> -->
+
+    
   </div>
 </body>
 </html>

@@ -3,9 +3,9 @@
 }
 
 .container{
-    max-width: 1280px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 0 $base-spacing;
+    padding: 0 3%;
 }
 
 section{
@@ -18,7 +18,31 @@ section{
 
 
 @media (max-width: $mediaQuery-mobile-vp) {
-    .one-column-mobile{
-        @include grid(1);
+    section{
+        padding: $spacing-xl 0;
     }
+
+    .one-column-mobile{
+        @include grid(1, stretch, stretch, 30px 10px);
+    }
+}
+.curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.curve svg {
+    position: relative;
+    display: block;
+    width: calc(103% + 1.3px);
+    height: 121px;
+}
+
+.curve {
+    fill: #FFFFFF;
 }

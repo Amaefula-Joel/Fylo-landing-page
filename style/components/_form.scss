@@ -5,9 +5,12 @@ form{
         border-radius: $base-border-radius;
         min-width: 300px;
         font-size: $text-small;
+        margin-bottom: $base-spacing;
 
-        &.block{
-            display: block;
+        @media (max-width: $mediaQuery-mobile-vp) {
+            &{
+                width: 100%;
+            }
         }
     }
 }

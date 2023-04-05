@@ -5,7 +5,7 @@ $base-border-radius: .3rem;
 $spacing-sm: $base-spacing * .5;
 $spacing-md: $base-spacing * 1.5;
 $spacing-lg: $base-spacing * 2.5;
-$spacing-xl: $base-spacing * 4;
+$spacing-xl: $base-spacing * 4.5;
 
 
 /* Box sizing rules */
@@ -52,6 +52,10 @@ h1, h2, h3, h4, h5{
 
 h1, h2, h3, h4, h5, p{
     font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* A elements that don't have a class get default styles */

@@ -9,6 +9,12 @@
     cursor: pointer;
 
     &:hover{
-        opacity: .7;
+        background-color: hsl(220.54deg, 100%, 70.98%);
+    }
+
+    @media (max-width: $mediaQuery-mobile-vp) {
+        &{
+            width: 100%;
+        }
     }
 }
