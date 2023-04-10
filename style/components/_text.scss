@@ -1,6 +1,13 @@
 h1, h2{
     margin-bottom: $spacing-md;
-    font-size: $heading-1
+}
+
+h1{
+    font-size: $heading-1;
+}
+
+h2{
+    font-size: $heading-2;
 }
 
 p{

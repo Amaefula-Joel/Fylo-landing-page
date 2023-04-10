@@ -13,3 +13,6 @@
 
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
+
+# font awesome file for local dev
+font-awesome(4.7.0)

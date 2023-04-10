@@ -5,20 +5,23 @@
 .container{
     max-width: 1300px;
     margin: 0 auto;
-    padding: 0 3%;
+    padding: 0 min(5%, 50px);
 }
 
-section{
+section, footer{
     padding: $base-spacing * 7 0;
+}
+
+footer{
+    font-size: 14px;
 }
 
 .section-flex{
     @include grid(2, stretch, center);
 }
 
-
 @media (max-width: $mediaQuery-mobile-vp) {
-    section{
+    section, footer{
         padding: $spacing-xl 0;
     }
 
@@ -26,6 +29,28 @@ section{
         @include grid(1, stretch, stretch, 30px 10px);
     }
 }
+
+.footer-flex{
+    @include grid(4, stretch, flex-start);
+
+    @media (max-width: 800px) {
+        &{
+            grid-template-columns: 1fr 1fr;
+
+            & > div{
+                margin-bottom: $base-spacing;
+            }
+        }
+        @media (max-width: 500px) {
+            &{
+                grid-template-columns: 1fr;
+            
+                .social-icons{ justify-content: center; }
+            }
+        }
+    }
+}
+
 .curve {
     position: absolute;
     top: 0;

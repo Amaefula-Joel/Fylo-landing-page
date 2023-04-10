@@ -105,11 +105,15 @@ button {
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 3%;
+  padding: 0 min(5%, 50px);
 }
 
-section {
+section, footer {
   padding: 5.25rem 0;
+}
+
+footer {
+  font-size: 14px;
 }
 
 .section-flex {
@@ -121,7 +125,7 @@ section {
 }
 
 @media (max-width: 768px) {
-  section {
+  section, footer {
     padding: 3.375rem 0;
   }
   .one-column-mobile {
@@ -132,6 +136,30 @@ section {
     gap: 30px 10px;
   }
 }
+.footer-flex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: stretch;
+  align-items: flex-start;
+  gap: 10px;
+}
+@media (max-width: 800px) {
+  .footer-flex {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-flex > div {
+    margin-bottom: 0.75rem;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .footer-flex {
+    grid-template-columns: 1fr;
+  }
+  .footer-flex .social-icons {
+    justify-content: center;
+  }
+}
+
 .curve {
   position: absolute;
   top: 0;
@@ -252,6 +280,42 @@ nav ul li a {
   color: hsl(243deg, 87%, 12%);
 }
 
+.footer-links {
+  display: flex;
+  justify-content: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer-links a {
+  color: hsl(0deg, 0%, 75%);
+  margin-bottom: 0.75rem;
+}
+.footer-links a:hover {
+  color: #5d86f9;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 10px;
+}
+.social-icons a {
+  width: 35px;
+  height: 35px;
+  font-size: 15px;
+  border: 2px solid hsl(0deg, 0%, 75%);
+  border-radius: 50%;
+  color: hsl(240deg, 75%, 98%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons a:hover {
+  color: #5d86f9;
+  border-color: #5d86f9;
+}
+
 .logo img {
   height: 35px;
 }
@@ -267,6 +331,13 @@ nav ul li a {
   }
 }
 
+.icon {
+  display: inline-block;
+  width: 17px;
+  margin-right: 1.125rem;
+  vertical-align: middle;
+}
+
 .avatar {
   width: 30px;
   height: 30px;
@@ -275,6 +346,13 @@ nav ul li a {
 
 h1, h2 {
   margin-bottom: 1.125rem;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
   font-size: 33px;
 }
 
@@ -617,6 +695,10 @@ form input {
 
 .d-inline-block {
   display: inline-block;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 @media (max-width: 768px) {

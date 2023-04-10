@@ -1,0 +1,33 @@
+.footer-links{
+    @include flex(stretch, flex-start);
+    flex-direction: column;
+
+    a{
+        color: $neutral-200;
+        margin-bottom: $base-spacing;
+        
+        &:hover{
+            color: lighten($accent-200, 9);;
+        }
+    }
+}
+
+.social-icons{
+    @include flex();
+    gap: 10px;
+
+    a{
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+        border: calc($base-thickness * 2) solid $neutral-200;
+        border-radius: 50%;
+        color: $neutral-100;
+        @include flex(center, center);
+
+        &:hover{
+            color: lighten($accent-200, 9);
+            border-color: lighten($accent-200, 9);
+        }
+    }
+}

@@ -16,11 +16,12 @@
     }
 }
 
-// .curve{ 
-//     img{
-//         width: 100%;
-//     }
-// }
+.icon{
+    display: inline-block;
+    width: 17px;
+    margin-right: $spacing-md;
+    vertical-align: middle;
+}
 
 .avatar{
     width: 30px;
