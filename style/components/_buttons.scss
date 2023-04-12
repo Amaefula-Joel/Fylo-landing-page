@@ -1,6 +1,7 @@
 .btn{
-    padding: calc($base-spacing / 1.2) $spacing-xl; 
+    padding: calc($base-spacing / 1.2) $base-spacing; 
     border-radius: $base-border-radius;
+    width: 190px;
     background-color: $accent-200;
     color: $neutral-100;
     border: $base-thickness solid $accent-200;

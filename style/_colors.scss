@@ -5,7 +5,8 @@ $colors-map: (
     'accent-200' : $accent-200,
     'neutral-100' : $neutral-100,
     'neutral-200' : $neutral-200,
-    'light-gray' : hsl(240deg, 75%, 98.43%)
+    'light-gray' : hsl(240deg, 75%, 98.43%),
+    'error' : $error
 );
 
 @each $key, $val in $colors-map{

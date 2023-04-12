@@ -70,6 +70,18 @@ $spacing-map: (
     display: inline-block;
 }
 
+.d-flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.align-items-start{
+    align-items: flex-start;
+}
+
 .w-100{
     width: 100%;
 }

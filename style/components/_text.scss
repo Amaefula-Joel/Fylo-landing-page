@@ -14,6 +14,12 @@ p{
     margin-bottom: $base-spacing;
 }
 
+.error-message{
+    display: none;
+    margin: 0;
+    font-size: 13px;
+}
+
 .call-to-action{
     @include flex();
     a{

@@ -1,16 +1,28 @@
 form{
     input{
         border: $base-thickness solid $primary-100;
-        padding: calc($base-spacing / 1.2);
+        padding: calc($base-spacing / 1.2) $spacing-md;
         border-radius: $base-border-radius;
         min-width: 300px;
         font-size: $text-small;
-        margin-bottom: $base-spacing;
+        // margin-bottom: $base-spacing;
 
-        @media (max-width: $mediaQuery-mobile-vp) {
-            &{
-                width: 100%;
-            }
+        &.error{
+            border-color: $error;
         }
+    }
+
+    .form-flex{
+        @include flex(stretch, flex-start);
+        flex-wrap: wrap;
+        gap: $spacing-sm;
+    }
+
+    @media (max-width: $mediaQuery-mobile-vp) {
+        input{
+            width: 100%;
+        }
+
+        .form-flex > div{ width: 100%; }
     }
 }

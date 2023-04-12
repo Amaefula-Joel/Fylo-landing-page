@@ -48,8 +48,14 @@
               family, and co-workers.</p>
 
               <form>
-                <input type="email" placeholder="Enter your email..">
-                <button type="submit" class="btn">Get Started</button>
+                <div class="form-flex">
+                  <div class="margin-right-sm">
+                    <input type="text" name="email-address" placeholder="Enter your email..">
+                    <p class="error-message text-error"></p>
+                  </div>
+                  
+                  <button type="submit" class="btn">Get Started</button>
+                </div>
               </form>
           </div>
           <div class="hero-img">
@@ -113,8 +119,9 @@
 
           <div>
             <form>
-              <input type="email" class="w-100" placeholder="email@example.com">
-              <button type="submit" class="btn">Get Started For Free</button>
+              <input type="text" name="email-address" class="w-100" placeholder="email@example.com">
+              <p class="error-message text-neutral-100"></p>
+              <button type="submit" class="btn margin-top-base">Get Started For Free</button>
             </form>
           </div>
         </div>
@@ -166,5 +173,7 @@
 
     
   </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
