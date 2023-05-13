@@ -17,10 +17,10 @@
     gap: 10px;
 
     a{
-        width: 35px;
-        height: 35px;
-        font-size: 15px;
-        border: calc($base-thickness * 2) solid $neutral-200;
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+        border: $base-thickness solid $neutral-200;
         border-radius: 50%;
         color: $neutral-100;
         @include flex(center, center);
